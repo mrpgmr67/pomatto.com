@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Michael and Kimberly Pomatto</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">Michael and Kimberly Pomatto</h2>
+            <div class="toggle"</div>
+        </header>
+        <video src="./video/background.mp4" muted loop autoplay></video>        
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>Never Stop</h2>
+            <h3>Expanding your worldview</h3>            
+            <p>Welcome to the homesite of Michael and Kimberly Pomatto.</p>
+            <p>We are avid data science professionals, foodies, and world explorers.
+                  Our mission is to meet new people, share a meal or a conversation, and learning about their world.  </p>
+            <p>The world is an amazing
+                  place with so much to offer.  We want to use our abilities to help understand what brings people together, and respond to 
+                  our calling in life.  We welcome you to join us on our journey as we continue to make the world a better place.</p>
+            <!--<a href="#">Explore</a>-->            
+        </div>
+        <iframe src="./html/bottomlinks.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>    
+  
+    </section>    
+    <iframe src="./html/topmenu.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+    <script>
+        const menuToggle = document.querySelector('.toggle')    
+        const showcase = document.querySelector('.showcase')  
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+    </script>
+</body>
+</html>

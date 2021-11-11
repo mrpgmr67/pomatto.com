@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Michael and Kimberly Pomatto</title>
+</head>
+<body>
+    <section class="blogshowcase">
+        <header>
+            <h2 class="logo">Introduction to the R Language</h2>
+            <div class="toggle"</div>
+        </header>                                     
+        <div class="row">    
+          <div class="column">
+            <div class="card">
+              <h2>Object Oriented Programming</h2>
+              <h5>Buidling a farming simulation using classes in R, Oct 21, 2020</h5>
+              <div class="videoWrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/b4avIMojtcs" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; 
+                    autoplay; clipboard-write; encrypted-media; 
+                    gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+              </div>
+              <p>One of the most challenging topics in R is the use of classes and object oriented programming.  This video is part
+                of the Data Analytics in R series, and provides an example of building a farming simulation in R using S3 and S4
+                classes.  
+              </p>
+            </div>
+          </div>          
+          <div class="column">
+            <div class="card">
+                  <h2>Basic Simulations</h2>
+                  <h5>Core elements of the bus simulation exercise, Oct 21, 2020</h5>
+                  <div class="videoWrapper">                   
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2p19lK7Ko-k" 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; 
+                        autoplay; clipboard-write; encrypted-media; 
+                        gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>                                   
+                  </div>
+                  <p>This was an introductory exercise to create a bus simulation using R.  It included the use of queues and 
+                    building out more complicated solutions from basic R scripts.  This was also part of the Data Analytics in R 
+                    series.
+                  </p>              
+              </div>          
+            </div>
+          </div>                                                      
+        </div>            
+        <div class="row">    
+          <div class="column">
+            <div class="card">              
+            </div>
+          </div>          
+          <div class="column">
+            <div class="card">                                
+            </div>
+          </div>                                                      
+        </div> 
+        <iframe src="../html/bottomlinks.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>         
+    </section>        
+    <iframe src="../html/topmenu.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>         
+    <script>
+        const menuToggle = document.querySelector('.toggle')    
+        const blogshowcase = document.querySelector('.blogshowcase')  
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            blogshowcase.classList.toggle('active')
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Michael and Kimberly Pomatto</title>
+</head>
+<body>
+    <section class="blogshowcase">
+        <header>
+            <h2 class="logo">Application Development </h2>
+            <div class="toggle"</div>
+        </header>                                     
+        <div class="row">    
+          <div class="column">
+            <div class="card">
+                  <h2>The Breakfast Button</h2>
+                  <h5>This is the epic story of how I messed with Apple for a useless game we created, Oct 11, 2020</h5>
+                  <div class="videoWrapper">                   
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Vql3huNXLo8" 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; 
+                        autoplay; clipboard-write; encrypted-media; 
+                        gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>                                   
+                  </div>
+                  <p>This video is a remixed version of the original.</p>                                    
+            </div>
+          </div>                                                      
+        </div>    
+      
+        <iframe src="../html/bottomlinks.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>         
+    </section>        
+    <iframe src="../html/topmenu.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>         
+    <script>
+        const menuToggle = document.querySelector('.toggle')    
+        const blogshowcase = document.querySelector('.blogshowcase')  
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            blogshowcase.classList.toggle('active')
+        })
+    </script>
+</body>
+</html>
