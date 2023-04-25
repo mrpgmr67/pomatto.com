@@ -1,41 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Michael and Kimberly Pomatto - World Experiences, Travel, and Food</title>
-</head>
-<body>
-    <section class="showcase">
-        <header>
-            <h2 class="logo">Michael and Kimberly Pomatto</h2>
-            <div class="toggle"</div>
-        </header>
-        <video src="./video/background.mp4" muted loop autoplay></video>        
-        <div class="overlay"></div>
-        <div class="text">
-            <h2>World Experiences, Travel, and Food</h2>
-            <h3>Never Stop Expanding your Worldview</h3>            
-            <p>As data science professionals and teachers, we bring a unique perspective to our travels and culinary explorations, using data and analytics to uncover insights and patterns that enhance our experiences.</p>
-            <p>On this site, you'll find a collection of our travel stories and food adventures, along with tips and recommendations for anyone looking to embark on their own journey of discovery.</p>
-            <p>From the bustling streets of Vietnam to the charming towns of Italy, we've explored some of the world's most fascinating destinations and uncovered hidden gems that are off the beaten path. But it's not just about the exotic locations - we also have a special place in our hearts for Germany, London, and Ukraine, where we've experienced the rich cultures and flavors of these regions. Whether it's enjoying a stein of beer in Munich, indulging in fish and chips in London, or savoring traditional Ukrainian borscht, we're always on the lookout for new culinary experiences that expand our horizons.</p>
-            <p>We believe that food is an essential part of any travel experience, and as data science professionals, we love to dive into the data behind different cuisines and uncover the science behind what makes certain dishes so delicious.</p>
-            <p>Join us as we continue to explore the world and share our experiences with you! Whether you're a seasoned traveler looking for new ideas or a foodie looking to explore new cuisines, we hope you'll find something of interest on our site.</p>
-            <!--<a href="#">Explore</a>-->            
-        </div>
-        <iframe src="./html/bottomlinks.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>    
-  
-    </section>    
-    <iframe src="./html/topmenu.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
-    <script>
-        const menuToggle = document.querySelector('.toggle')    
-        const showcase = document.querySelector('.showcase')  
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Michael and Kimberly Pomatto - World Experiences, Travel, and Food</title>
+    </head>
+    <body>
+        <section class="showcase">
+            <header>
+                <h2 class="logo">Michael and Kimberly Pomatto</h2>
+                <div class="toggle"></div>
+            </header>
+            <video src="./video/background.mp4" muted loop autoplay></video>        
+            <div class="overlay"></div>
+            <div class="text">
+                <h2>World Experiences, Travel, and Food</h2>
+                <h3>Never Stop Expanding your Worldview</h3>            
+                <p>As data science professionals and teachers, we bring a unique perspective to our travels and culinary explorations, using data and analytics to uncover insights and patterns that enhance our experiences.</p>
+                <p>On this site, you'll find a collection of our travel stories and food adventures, along with tips and recommendations for anyone looking to embark on their own journey of discovery.</p>
+                <p>From the bustling streets of Vietnam to the charming towns of Italy, we've explored some of the world's most fascinating destinations and uncovered hidden gems that are off the beaten path. But it's not just about the exotic locations - we also have a special place in our hearts for Germany, London, and Ukraine, where we've experienced the rich cultures and flavors of these regions. Whether it's enjoying a stein of beer in Munich, indulging in fish and chips in London, or savoring traditional Ukrainian borscht, we're always on the lookout for new culinary experiences that expand our horizons.</p>
+                <p>We believe that food is an essential part of any travel experience, and as data science professionals, we love to dive into the data behind different cuisines and uncover the science behind what makes certain dishes so delicious.</p>
+                <p>Join us as we continue to explore the world and share our experiences with you! Whether you're a seasoned traveler looking for new ideas or a foodie looking to explore new cuisines, we hope you'll find something of interest on our site.</p>
+                <!--<a href="#">Explore</a>-->            
+            </div>
+            <iframe src="./html/bottomlinks.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>   
+        </section>    
+        <iframe src="./html/topmenu.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+        <script>
+            const menuToggle = document.querySelector('.toggle')    
+            const showcase = document.querySelector('.showcase')  
 
-        menuToggle.addEventListener('click', () => {
-            menuToggle.classList.toggle('active')
-            showcase.classList.toggle('active')
-        })
-    </script>
-</body>
+            menuToggle.addEventListener('click', () => {
+                menuToggle.classList.toggle('active')
+                showcase.classList.toggle('active')
+            })
+        </script>
+    </body>
 </html>
